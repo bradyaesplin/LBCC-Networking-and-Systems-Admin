@@ -1,6 +1,6 @@
 # LBCC-Networking-and-Systems-Admin
 
-# Attended Linn Benton Community College from 9/30/2019 to 9/2/2021
+# Linn Benton Community College
 Graduated 9/2/2021 
 Associate of Applied Science
 Major: Networking and Systems Administration
