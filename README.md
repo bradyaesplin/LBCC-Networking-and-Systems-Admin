@@ -10,6 +10,7 @@ This repository is a selection of projects and assignments that I have saved.
 
 ## Information for relevant classes
 | **Subject & Course** | **Title** | **Grade** | **Notes** |
+| -------------------- | --------- | --------- | --------- |
 | CS160 | Orientation to Computer Science | A | Python |
 | CIS195 | Web Development I | A | HTML |
 | CS161 | Introduction to Computer Science I | A | Python |
