@@ -1,10 +1,11 @@
 # LBCC-Networking-and-Systems-Admin
 
 # Linn Benton Community College
--Graduated 9/2/2021 
--Associate of Applied Science
--Major: Networking and Systems Administration
--Certificate: Networking and Systems Administration 
+- Graduated 9/2/2021 
+- Associate of Applied Science
+- Major: Networking and Systems Administration
+- GPA:3.86
+- Certificate: Networking and Systems Administration 
 
 This repository is a selection of projects and assignments that I have saved.
 
