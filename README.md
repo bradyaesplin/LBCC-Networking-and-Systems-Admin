@@ -20,7 +20,7 @@ This repository is a selection of projects and assignments that I have saved.
 | CS275 | Database Systems | A | MySQL |
 | CIS151 | Introduction to Networks | A | CCNA Prep Course |
 | CS140M | Operating Systems: Microsoft | A | Windows |
-| CS225 | IT Career Skills | A | Interpersonal Skills |
+| CS225 | IT Career Skills | A |  |
 | CS279 | Network Management | A | Ubuntu |
 | CIS152 | Routing & Switching Essentials | A | CCNA Prep Course |
 | CS240A | Microsoft Windows Server Admin I | B | Windows |
