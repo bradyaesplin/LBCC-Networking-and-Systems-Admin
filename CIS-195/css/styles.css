@@ -1,0 +1,126 @@
+/*styles.css*/
+/*This section is for styling the web pages*/
+h1	{
+	color: navy;
+	font-style: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+h2 	{
+	color: navy;
+	font-style: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+table
+	{
+	border-style: solid;
+	width: 50%;
+	border-color: black;
+	border-width: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th	{
+	border-style: solid;
+	width: 500px;
+	border-color: black;
+	border-width: 1px;
+}
+
+td	{
+	border-style: solid;
+	width: 500px;
+	border-color: black;
+	border-width: 1px;
+}
+
+p {
+	border: solid lightblue;
+	font-family: "Times New Roman", Times, serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	overflow: auto;
+	padding: 20px;
+}
+
+div {
+	padding: 50px;
+}
+
+/*This secection controls the responsive navbar*/
+
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: navy;
+	color: white;
+}
+
+ul.topnav li a.active {
+	background-color: steelblue;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/*This section is for styling images*/
+img {
+	max-width:100%;
+	height: auto;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.intro {
+	height: auto;
+	width: 45%;
+	float: right;
+	padding: 25px;
+	margin: 10px;
+}
+
+img.introleft {
+	height: auto;
+	width:45%;
+	float: left;
+	padding: 25px;
+	margin: 10px;
+}
+img.vid {
+	float: right;
+	padding: 25px;
+	margin: 10px;
+}
+
+img.smaller {
+	max-height:150px;
+	width: auto;
+	float: right;
+	padding: 25px;
+	margin: 10px;
+}
