@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Tiresias";
+    src: url("assets/fonts/tiresias_infofont-webfont.woff") format("woff"), url("assets/fonts/tiresias_infofont-webfont.woff2") format("woff2")
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#66b3ff, #1a8cff);
+}
+
+.page-title {
+    color: #000000;
+    font-family: Tiresias, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6em;
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+}
+
+.game-info {
+    color: #000000;
+    font-family: Tiresias, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.foot {
+    color: #000000;
+    font-family: Tiresias, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.url {
+    font-family: Tiresias, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.card {
+    position: relative;
+    height: 125px;
+    width: 125px;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    transition: transform 500ms ease-in-out;
+}
+
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #000000;
+    font-family: Tiresias, sans-serif;
+}
+
+.overlay-text-small {
+    font-size: .3em;
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, .5);
+        font-size: 10em;
+    }
+}
+
+.card-back {
+    background-color: #808080;
+    border-color: #000000;
+}
+
+.card-front {
+    background-color: #808080;
+    border-color: #000000;
+    transform: rotateY(180deg);
+}
+
+.card-value {
+    transform: scale(.8);
+}
+
+
+.eyebrow-face {
+    height: 50%;
+    align-self: flex-start;
+    transform: translateY(50%);
+    transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .eyebrow-face {
+    transform: translateY(40%);
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-info {
+        font-size: 1em;
+    }
+
+    .page-title {
+        font-size: 3em;
+    }
+    
+    .overlay-text.visible {
+        font-size: 10px;
+    }
+
+    .overlay-text {
+        font-size: 10px;
+    }
+
+}
